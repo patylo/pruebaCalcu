@@ -1,0 +1,94 @@
+/*aspectos generales: bordes y color de fondo de calculadora*/
+.calculadora { 
+    border: 3px #f57004 ridge; width: 100%;text-align: center;
+    background-color: #2a1502; 
+    margin:auto;  
+    margin-top: 0px;
+    border-radius: 20px;
+}
+
+/*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
+#textoPantalla { 
+    width: 500px; border: 2px rgb(255, 137, 3) solid; text-align: right;
+    position: relative; left: 30px;  padding: 15px 10px;
+    background-color: rgb(251, 251, 251); 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/*botones normales: anchura y margen*/
+.calculadora [type=button] { 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    width: 95px; padding: 10px;
+    background-color: #f6dbc2;  
+    border-radius: 15px; 
+    border: #2a1502;
+}
+/*botones especiales*/
+.calculadora input.largo { 
+    color:#cc4f07; width: 120px; 
+    padding: 10px;
+    border:  #2a1502;
+}
+
+.body{
+    background: url("../img/fondo3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: rgba(59, 30, 2, 0.911);/*Aqui modifcan el color de la barra de arriba*/
+    color: rgb(238, 191, 82);
+
+    top:0;
+    left: 0;
+    z-index: 200;/*Para que el header sea el que tape a los demas elementos*/
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;/*Para que este siempre centrado*/
+}
+
+h1{
+    float: left;
+}
+
+@media (min-width:380px){
+    .calculadora{
+        width:80%;
+        margin-top: 50px;
+    }
+    .calculadora #textoPantalla{
+        width: 80%;
+    }
+    .calculadora [type=button]{
+        width: 17%;
+    }
+    .body{
+        height: 120vh;
+    }
+}
+
+@media (min-width:780px){
+    .calculadora{
+        width:45%;
+        margin-top: 0px;
+    }
+    .body{
+        height: 90vh;
+    }
+}
+
+
+
+
+
+
